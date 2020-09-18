@@ -1,0 +1,11 @@
+# An example of a workload generator for quicksort
+# Integrate the configuration into your perun shared configuration
+# (i.e., perun config --shared edit)
+
+generators:
+  workload:
+  - id: qsort_len
+    type: integer
+    min_range: 10
+    max_range: 100
+
